@@ -1,39 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="calc.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calc.css" />
+<script src="scripts.js"></script>
 </head>
 <body>
-  <script src="scripts.js"></script>
-  <div class="container">
-    <section class="header">
-      <h1>CALC</h1>
-      <input type="text" id="display">
-    </section>
-    <section class="buttons">
-      <button onclick="getNumber(1)">1</button>
-      <button onclick="getNumber(2)">2</button>
-      <button onclick="getNumber(3)">3</button>
-      <button onclick="getOperator('+')">+</button>
+	
+	<div class="app">
 
-      <button onclick="getNumber(4)">4</button>
-      <button onclick="getNumber(5)">5</button>
-      <button onclick="getNumber(6)">6</button>
-      <button onclick="getOperator('-')">-</button>
+		<div class="calculator">
 
-      <button onclick="getNumber(7)">7</button>
-      <button onclick="getNumber(8)">8</button>
-      <button onclick="getNumber(9)">9</button>
-      <button onclick="getOperator('*')">*</button>
+			<div class="display">
+				<div class="content">
+					<div class="input"></div>
+					<div class="output"></div>
+				</div>
+			</div>
 
-      <button onclick="ClearDisplay()">CE</button>
-      <button onclick="getNumber('0')">0</button>
-      <button onclick="CalculateEquals()">=</button>
-      <button onclick="getOperator('/')">/</button>
-    </section>
-  </div>
+			<div class="keys">
+
+				<div data-key="clear" class="key action">
+					<span>AC</span>
+				</div>
+
+				<div data-key="brackets" class="key action">
+					<span>( )</span>
+				</div>
+
+				<div data-key="%" class="key action">
+					<span>%</span>
+				</div>
+
+				<div data-key="/" class="key operator">
+					<span>÷</span>
+				</div>
+
+				<div data-key="7" class="key">
+					<span>7</span>
+				</div>
+
+				<div data-key="8" class="key">
+					<span>8</span>
+				</div>
+
+				<div data-key="9" class="key">
+					<span>9</span>
+				</div>
+
+				<div data-key="*" class="key operator">
+					<span>x</span>
+				</div>
+
+				<div data-key="4" class="key">
+					<span>4</span>
+				</div>
+
+				<div data-key="5" class="key">
+					<span>5</span>
+				</div>
+
+				<div data-key="6" class="key">
+					<span>6</span>
+				</div>
+
+				<div data-key="-" class="key operator">
+					<span>-</span>
+				</div>
+
+				<div data-key="1" class="key">
+					<span>1</span>
+				</div>
+
+				<div data-key="2" class="key">
+					<span>2</span>
+				</div>
+
+				<div data-key="3" class="key">
+					<span>3</span>
+				</div>
+
+				<div data-key="+" class="key operator">
+					<span>+</span>
+				</div>
+
+				<div data-key="backspace" class="key action">
+					<span>&lt;</span>
+				</div>
+
+				<div data-key="0" class="key">
+					<span>0</span>
+				</div>
+
+				<div data-key="." class="key">
+					<span>.</span>
+				</div>
+				
+				<div data-key="=" class="key operator">
+					<span>=</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	
 </body>
 </html>
